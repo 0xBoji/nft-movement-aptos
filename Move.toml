@@ -1,14 +1,16 @@
 [package]
-name = "aptosball_movement"
+name = "nft_movement_aptos"
 version = "1.0.0"
 authors = []
 
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir="aptos-move/framework/aptos-framework/", rev="main" }
+AptosToken = { git = "https://github.com/aptos-labs/aptos-core.git", subdir="aptos-move/framework/aptos-token/", rev="main" }
+
 [addresses]
-admin="0x51c9a3005c8d606ca338d428c1a57b41899fa8ff2214ff5840fc46ad8e0c29cf"
+aptos_framework = "0x1"
+minter = "8b425e24c49863246bd296125844a1175310fb80b769c04179e4dc7fd18fdcfc"
 
-[dependencies.AptosFramework]
-git = "https://github.com/aptos-labs/aptos-core.git"
-rev = "testnet"
-subdir = "aptos-move/framework/aptos-framework"
+admin_addr = "0x79fde198f2889dc141ad5aaf1a0d8e08539b678e737ccc865cb164ea297d5aa7"
+aptosnftstudio_addr = "0xcfd0fc416096201c3ea6f3814f9aea90f30062f58069138c797a99726770d9c2"
 
-[dev-dependencies]
