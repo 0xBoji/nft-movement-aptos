@@ -1,0 +1,14 @@
+[package]
+name = "aptosball_movement"
+version = "1.0.0"
+authors = []
+
+[addresses]
+admin="0x51c9a3005c8d606ca338d428c1a57b41899fa8ff2214ff5840fc46ad8e0c29cf"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "testnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dev-dependencies]
